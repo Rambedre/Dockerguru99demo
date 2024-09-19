@@ -1,0 +1,89 @@
+<project xmlns="https://maven.apache.org/POM/4.0.0">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>Guru99ProjectDemo</groupId>
+	<artifactId>Guru99ProjectDemo</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>7.4.0</version>
+			<scope>test</scope>
+		</dependency>
+
+		<!--
+		https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>4.20.0</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>io.github.bonigarcia</groupId>
+			<artifactId>webdrivermanager</artifactId>
+			<version>5.2.3</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/io.appium/java-client -->
+        <dependency>
+            <groupId>io.appium</groupId>
+            <artifactId>java-client</artifactId>
+            <version>8.5.1</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.7.1</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.github.ashwithpoojary98/appium_flutterfinder_java -->
+        <dependency>
+            <groupId>io.github.ashwithpoojary98</groupId>
+            <artifactId>appium_flutterfinder_java</artifactId>
+            <version>1.0.7</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.24</version>
+            <scope>provided</scope>
+        </dependency>
+
+	</dependencies>
+	<build>
+      <plugins>
+		  
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.11.0</version>
+          <configuration>
+            <encoding>UTF-8</encoding> 
+ 			<source>1.8</source>
+			<target>1.8</target>
+          </configuration>
+        </plugin>
+        
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>3.2.2</version>
+          <configuration>
+			  <suiteXmlFiles>
+				  <suiteXmlFile>
+					  testng.xml
+				  </suiteXmlFile>
+			  </suiteXmlFiles>
+		  </configuration>
+        </plugin>
+        
+      </plugins>
+  </build>
+
+</project>
