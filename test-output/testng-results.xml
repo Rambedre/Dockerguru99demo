@@ -1,33 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-07T21:20:39 IST" name="Default suite" finished-at="2024-08-07T21:21:13 IST" duration-ms="34437">
+  <suite started-at="2024-11-21T22:44:54 IST" name="Suite" finished-at="2024-11-21T22:45:21 IST" duration-ms="27081">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.Guru99Runner@3fc2959f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-08-07T21:20:39 IST" name="Default test" finished-at="2024-08-07T21:21:13 IST" duration-ms="34437">
-      <class name="Guru99Testcases.guruDemoSiteTestCases">
-        <test-method is-config="true" signature="browserSetup()[pri:0, instance:Guru99Testcases.guruDemoSiteTestCases@5ffead27]" started-at="2024-08-07T21:20:39 IST" name="browserSetup" finished-at="2024-08-07T21:20:49 IST" duration-ms="10395" status="PASS">
+    <test started-at="2024-11-21T22:44:54 IST" name="Test" finished-at="2024-11-21T22:45:21 IST" duration-ms="27081">
+      <class name="Runner.Guru99Runner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:Runner.Guru99Runner@3fc2959f]" started-at="2024-11-21T22:44:54 IST" name="setUpClass" finished-at="2024-11-21T22:44:56 IST" duration-ms="1908" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@772861aa]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- browserSetup -->
-        <test-method signature="addCustomer()[pri:1, instance:Guru99Testcases.guruDemoSiteTestCases@5ffead27]" started-at="2024-08-07T21:20:49 IST" name="addCustomer" finished-at="2024-08-07T21:20:55 IST" duration-ms="6062" status="PASS">
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.Guru99Runner@3fc2959f]" started-at="2024-11-21T22:44:56 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-21T22:45:21 IST" duration-ms="24831" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Execute the Guru99 Testcases"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Home Page Functionality"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addCustomer -->
-        <test-method signature="addTariffPlan()[pri:2, instance:Guru99Testcases.guruDemoSiteTestCases@5ffead27]" started-at="2024-08-07T21:20:55 IST" name="addTariffPlan" finished-at="2024-08-07T21:21:01 IST" duration-ms="6050" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Runner.Guru99Runner@3fc2959f]" started-at="2024-11-21T22:45:21 IST" name="tearDownClass" finished-at="2024-11-21T22:45:21 IST" duration-ms="151" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addTariffPlan -->
-        <test-method signature="addTariffPlantoCustomer()[pri:3, instance:Guru99Testcases.guruDemoSiteTestCases@5ffead27]" started-at="2024-08-07T21:21:01 IST" name="addTariffPlantoCustomer" finished-at="2024-08-07T21:21:08 IST" duration-ms="6290" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addTariffPlantoCustomer -->
-        <test-method is-config="true" signature="closetheBrowser()[pri:0, instance:Guru99Testcases.guruDemoSiteTestCases@5ffead27]" started-at="2024-08-07T21:21:08 IST" name="closetheBrowser" finished-at="2024-08-07T21:21:13 IST" duration-ms="5462" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closetheBrowser -->
-      </class> <!-- Guru99Testcases.guruDemoSiteTestCases -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- Runner.Guru99Runner -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

@@ -25,6 +25,7 @@ public class guruDemoSiteTestCases {
 	@BeforeTest
 	public void browserSetup() {
 //		WebDriverManager.chromedriver().setup();
+//		System.setProperty("webdriver.chrome.driver","D:\\Flutter\\AppiumDemo\\drivers\\chromedriver-win64\\chromedriver.exe");
 //		driver = new ChromeDriver();
 		WebDriverManager.edgedriver().setup();
 		driver = new EdgeDriver();
@@ -36,10 +37,10 @@ public class guruDemoSiteTestCases {
 	@Test(priority = 1)
 	public void addCustomer(){
 		driver.findElement(By.xpath("//section[@id=\"one\"]/descendant::a[text()='Add Customer']")).click();
-		WebElement frame = driver.findElement(By.xpath("//iframe[@id=\"google_ads_iframe_/24132379/INTERSTITIAL_DemoGuru99_0\"]"));
-		driver.switchTo().frame(frame);
-		driver.findElement(By.xpath("//div[@id=\"dismiss-button\"]/child::div")).click();
-		driver.switchTo().parentFrame();
+//		WebElement frame = driver.findElement(By.xpath("//iframe[@id=\"google_ads_iframe_/24132379/INTERSTITIAL_DemoGuru99_0\"]"));
+//		driver.switchTo().frame(frame);
+//		driver.findElement(By.xpath("//div[@id=\"dismiss-button\"]/child::div")).click();
+//		driver.switchTo().parentFrame();
 		driver.findElement(By.xpath("//label[text()='Done']")).click();
 		driver.findElement(By.xpath("//input[@id=\"fname\"]")).sendKeys("Guru");
 		driver.findElement(By.xpath("//input[@id=\"lname\"]")).sendKeys("Telecom");
