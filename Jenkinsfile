@@ -8,7 +8,7 @@ pipeline
 		{
 			steps
 			{
-				bat "mvn clean package -DSkipTests"
+				bat "mvn clean package -DskipTests"
 			}
 		}
 
@@ -24,7 +24,7 @@ pipeline
 		{
 			steps
 			{
-				bat "docker push 8669043558/latestguruimage"
+				bat "docker push 8669043558/guru99latest"
 			}
 		}
 	}
